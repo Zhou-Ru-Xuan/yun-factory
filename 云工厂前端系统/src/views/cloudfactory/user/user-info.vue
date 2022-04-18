@@ -1,0 +1,167 @@
+<template>
+    <div class="app-container">
+        <!--查询表单-->
+    <el-form :inline="true" class="demo-form-inline">
+      <el-form-item>
+        <el-input style="width:150px" v-model="userQuery.username" clearable placeholder="用户名" />
+      </el-form-item>
+
+      <el-form-item>
+        <el-input style="width:150px" v-model="userQuery.realName" clearable placeholder="真实姓名"/>
+      </el-form-item>
+
+      <el-form-item>
+        <el-input style="width:150px" v-model="userQuery.phone" clearable placeholder="联系方式"/>
+      </el-form-item>
+
+      <el-form-item label="添加时间">
+        <el-date-picker
+          v-model="userQuery.begin"
+          type="datetime"
+          placeholder="选择开始时间"
+          value-format="yyyy-MM-dd HH:mm:ss"
+          default-time="00:00:00"
+        />
+      </el-form-item>
+      <el-form-item>
+        <el-date-picker
+          v-model="userQuery.end"
+          type="datetime"
+          placeholder="选择截止时间"
+          value-format="yyyy-MM-dd HH:mm:ss"
+          default-time="00:00:00"
+        />
+      </el-form-item>
+
+      <el-button type="primary" icon="el-icon-search" @click="getList()">查询</el-button>
+      <el-button type="default" @click="resetData()">清空</el-button>
+      <div>
+        <router-link to="/user/user-add">
+                  <el-button style="margin-bottom:10px" type="success" icon="el-icon-plus">添加</el-button>
+        </router-link>
+      </div>
+    </el-form>
+
+    <!-- 表格 -->
+    <el-table
+      :data="list"
+      border
+      fit
+      highlight-current-row>
+
+      <el-table-column
+        label="序号"
+        width="70"
+        align="center">
+        <template slot-scope="scope">
+          {{ (page - 1) * limit + scope.$index + 1 }}
+        </template>
+      </el-table-column>
+
+      <el-table-column prop="username" label="用户名"/>
+
+      <el-table-column prop="password" label="密码"/>
+
+
+      <el-table-column prop="realName" label="真实姓名" />
+
+      <el-table-column prop="phone" label="联系方式" />
+
+      <el-table-column prop="roleName" label="角色名称" />
+
+      <el-table-column prop="gmtCreate" label="添加时间" width="160"/>
+
+
+      <el-table-column label="操作" width="200" align="center">
+        <template slot-scope="scope">
+          <router-link :to="'/user/edit/'+scope.row.id">
+            <el-button type="primary" size="mini" icon="el-icon-edit">修改</el-button>
+          </router-link>
+          <el-button type="danger" size="mini" icon="el-icon-delete" @click="removeDataById(scope.row.id,scope.row.username,scope.row.roleName)">删除</el-button>
+        </template>
+      </el-table-column>
+    </el-table>
+
+  <!-- 分页 -->
+    <el-pagination
+      :current-page="page"
+      :page-size="limit"
+      :total="total"
+      style="padding: 30px 0; text-align: center;"
+      layout="total, prev, pager, next, jumper"
+      @current-change="getList"  
+      
+    />
+    </div>
+    
+</template>
+
+<script>
+//引入调用userApi.js文件
+import userApi from '@/api/user/user'
+
+export default {
+    //写核心代码位置
+
+    data() { //定义变量和初始值
+        return {
+          list:null,//查询之后接口返回集合
+          page:1,//当前页
+          limit:5,//每页记录数
+          total:0,//总记录数
+          userQuery:{} //条件封装对象
+        }
+    },
+    created() { //页面渲染之前执行，一般调用methods定义的方法
+        //调用
+        this.getList() 
+    },
+    methods:{  //创建具体的方法，调用user.js定义的方法
+        //用户列表的方法
+        getList(page=1) {//给个默认参数，显示第一页
+            this.page = page;
+            userApi.getUserListPage(this.page,this.limit,this.userQuery)
+                .then(response =>{//请求成功
+                    //response接口返回的数据
+                    console.log(response)
+                    this.list = response.data.users
+                    this.total = response.data.total
+                    console.log(this.list)   
+                    console.log(this.total)
+                })
+                .catch(error => {//请求失败
+                    console.log(error)
+                }) 
+        },
+        resetData() {//清空的方法
+            //表单输入项数据清空
+            this.userQuery = {}
+            //查询所有用户数据
+            this.getList()
+        },
+        //删除用户的方法
+        removeDataById(id,username,roleName) {
+            this.$confirm('此操作将永久删除用户记录, 是否继续?', '提示', {
+                confirmButtonText: '确定',
+                cancelButtonText: '取消',
+                type: 'warning'
+            }).then(() => {  //点击确定，执行then方法
+                //调用删除的方法
+                userApi.deleteUserById(id)
+                    .then(response =>{//删除成功
+                    //提示信息
+                    this.$message({
+                        type: 'success',
+                        message: '删除成功!'
+                    });
+                    //回到列表页面
+                    this.getList()
+                })
+                if(roleName==='云工厂')
+                    userApi.deleteFactoryByUsername(username);
+            }) //点击取消，执行catch方法
+        }
+ 
+    }
+}
+</script>
