@@ -1,0 +1,16 @@
+2022-05-11 10:20:51.743 [http-nio-9090-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'real_name' in 'field list'
+### The error may exist in org/zhouruxuan/mapper/UserMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,username,password,real_name,phone,role_id,role_name,is_deleted,gmt_create,gmt_modified  FROM user   WHERE  is_deleted=0  AND (username = ? AND password = ?)
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'real_name' in 'field list'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'real_name' in 'field list']
+2022-05-11 10:23:06.296 [http-nio-9090-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'real_name' in 'field list'
+### The error may exist in org/zhouruxuan/mapper/UserMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,username,password,real_name,phone,role_id,role_name,is_deleted,gmt_create,gmt_modified  FROM user   WHERE  is_deleted=0  AND (username = ? AND password = ?)
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'real_name' in 'field list'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'real_name' in 'field list']

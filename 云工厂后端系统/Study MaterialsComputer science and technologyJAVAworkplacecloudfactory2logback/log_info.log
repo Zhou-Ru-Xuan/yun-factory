@@ -1,22 +1,76 @@
-2022-03-16 09:41:06.964 [restartedMain] INFO  org.zhouruxuan.Factory06Application - Starting Factory06Application on LAPTOP-JJ8GA5R4 with PID 524 (E:\Study Materials\课设-实训\Web与数据库实训\云工厂\Web\软件1908_20195407_周汝轩\源代码_软件1908_周汝轩\云工厂后端系统\target\classes started by 12052 in E:\Study Materials\课设-实训\Web与数据库实训\云工厂\Web\软件1908_20195407_周汝轩\源代码_软件1908_周汝轩\云工厂后端系统)
-2022-03-16 09:41:06.970 [restartedMain] INFO  org.zhouruxuan.Factory06Application - The following profiles are active: dev
-2022-03-16 09:41:07.007 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-03-16 09:41:07.007 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-03-16 09:41:08.072 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-03-16 09:41:08.078 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-03-16 09:41:08.111 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22ms. Found 0 Redis repository interfaces.
-2022-03-16 09:41:08.531 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
-2022-03-16 09:41:08.541 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
-2022-03-16 09:41:08.541 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2022-03-16 09:41:08.541 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2022-03-16 09:41:08.591 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2022-03-16 09:41:08.591 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1580 ms
-2022-03-16 09:41:09.701 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2022-03-16 09:41:09.770 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2022-03-16 09:41:09.801 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2022-03-16 09:41:09.945 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
-2022-03-16 09:41:09.961 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
-2022-03-16 09:41:09.961 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-2022-03-16 09:41:09.970 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2022-03-16 09:41:09.995 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2022-03-16 09:41:10.181 [restartedMain] INFO  org.zhouruxuan.Factory06Application - Started Factory06Application in 3.552 seconds (JVM running for 4.185)
+2022-05-12 08:46:04.360 [restartedMain] INFO  org.zhouruxuan.Factory06Application - Starting Factory06Application on LAPTOP-JJ8GA5R4 with PID 5780 (E:\Study Materials\课设-实训\Web与数据库实训\云工厂\Web\软件1908_20195407_周汝轩\源代码_软件1908_周汝轩\云工厂后端系统\target\classes started by 12052 in E:\Study Materials\课设-实训\Web与数据库实训\云工厂\Web\软件1908_20195407_周汝轩\源代码_软件1908_周汝轩\云工厂后端系统)
+2022-05-12 08:46:04.365 [restartedMain] INFO  org.zhouruxuan.Factory06Application - The following profiles are active: dev
+2022-05-12 08:46:04.404 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-12 08:46:04.405 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-12 08:46:05.564 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-12 08:46:05.567 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-12 08:46:05.609 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28ms. Found 0 Redis repository interfaces.
+2022-05-12 08:46:06.069 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2022-05-12 08:46:06.078 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2022-05-12 08:46:06.078 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-12 08:46:06.079 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-05-12 08:46:06.145 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-05-12 08:46:06.146 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1741 ms
+2022-05-12 08:46:07.266 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-05-12 08:46:07.334 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-12 08:46:07.362 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-05-12 08:46:07.505 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2022-05-12 08:46:07.520 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2022-05-12 08:46:07.521 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-05-12 08:46:07.534 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-05-12 08:46:07.555 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-05-12 08:46:07.721 [restartedMain] INFO  org.zhouruxuan.Factory06Application - Started Factory06Application in 3.728 seconds (JVM running for 4.771)
+2022-05-12 08:46:16.046 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-12 08:46:16.047 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-05-12 08:46:16.053 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2022-05-12 08:52:52.220 [http-nio-9090-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-05-12 08:52:52.671 [http-nio-9090-exec-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-05-12 08:53:26.307 [restartedMain] INFO  org.zhouruxuan.Factory06Application - Starting Factory06Application on LAPTOP-JJ8GA5R4 with PID 8400 (E:\Study Materials\课设-实训\Web与数据库实训\云工厂\Web\软件1908_20195407_周汝轩\源代码_软件1908_周汝轩\云工厂后端系统\target\classes started by 12052 in E:\Study Materials\课设-实训\Web与数据库实训\云工厂\Web\软件1908_20195407_周汝轩\源代码_软件1908_周汝轩\云工厂后端系统)
+2022-05-12 08:53:26.309 [restartedMain] INFO  org.zhouruxuan.Factory06Application - The following profiles are active: dev
+2022-05-12 08:53:26.348 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-12 08:53:26.349 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-12 08:53:26.926 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-12 08:53:26.928 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-12 08:53:26.951 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+2022-05-12 08:53:27.280 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2022-05-12 08:53:27.285 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2022-05-12 08:53:27.286 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-12 08:53:27.286 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-05-12 08:53:27.340 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-05-12 08:53:27.340 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 991 ms
+2022-05-12 08:53:28.335 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-05-12 08:53:28.392 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-12 08:53:28.417 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-05-12 08:53:28.555 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2022-05-12 08:53:28.568 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2022-05-12 08:53:28.569 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-05-12 08:53:28.580 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-05-12 08:53:28.598 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-05-12 08:53:28.755 [restartedMain] INFO  org.zhouruxuan.Factory06Application - Started Factory06Application in 2.732 seconds (JVM running for 3.24)
+2022-05-12 08:53:41.310 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-12 08:53:41.310 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-05-12 08:53:41.316 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2022-05-12 08:53:41.397 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-05-12 08:53:41.690 [http-nio-9090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-05-12 09:24:02.663 [restartedMain] INFO  org.zhouruxuan.Factory06Application - Starting Factory06Application on LAPTOP-JJ8GA5R4 with PID 13908 (E:\Study Materials\课设-实训\Web与数据库实训\云工厂\Web\软件1908_20195407_周汝轩\源代码_软件1908_周汝轩\云工厂后端系统\target\classes started by 12052 in E:\Study Materials\课设-实训\Web与数据库实训\云工厂\Web\软件1908_20195407_周汝轩\源代码_软件1908_周汝轩\云工厂后端系统)
+2022-05-12 09:24:02.668 [restartedMain] INFO  org.zhouruxuan.Factory06Application - The following profiles are active: dev
+2022-05-12 09:24:02.737 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-12 09:24:02.738 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-12 09:24:03.563 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-12 09:24:03.565 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-12 09:24:03.594 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19ms. Found 0 Redis repository interfaces.
+2022-05-12 09:24:04.028 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2022-05-12 09:24:04.034 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2022-05-12 09:24:04.035 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-12 09:24:04.035 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-05-12 09:24:04.105 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-05-12 09:24:04.105 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1366 ms
+2022-05-12 09:24:05.397 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-05-12 09:24:05.476 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-12 09:24:05.510 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-05-12 09:24:05.695 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2022-05-12 09:24:05.712 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2022-05-12 09:24:05.714 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-05-12 09:24:05.727 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-05-12 09:24:05.752 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-05-12 09:24:05.938 [restartedMain] INFO  org.zhouruxuan.Factory06Application - Started Factory06Application in 3.853 seconds (JVM running for 4.565)
